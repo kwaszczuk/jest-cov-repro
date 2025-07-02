@@ -1,0 +1,4 @@
+packages:
+  - packages/**
+patchedDependencies:
+  jest-runtime@30.0.2: patches/jest-runtime@30.0.2.patch

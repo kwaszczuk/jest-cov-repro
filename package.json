@@ -1,0 +1,5 @@
+{
+  "name": "@kwaszczuk/jest-cov-repro",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.11.0"
+}

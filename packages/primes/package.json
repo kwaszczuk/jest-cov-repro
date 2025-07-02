@@ -1,0 +1,12 @@
+{
+  "name": "@kwaszczuk/primes",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@kwaszczuk/utils": "workspace:*",
+    "jest": "30.0.3"
+  }
+}

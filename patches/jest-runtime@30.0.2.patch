@@ -1,0 +1,13 @@
+diff --git a/build/index.js b/build/index.js
+index 6c0fd48ad019d641cf6e187ae38b74c11266da9c..03a59b7801ea18118d1a506f514ffe6f91c0ffde 100644
+--- a/build/index.js
++++ b/build/index.js
+@@ -1060,7 +1060,7 @@ class Runtime {
+       url: (0, _url().fileURLToPath)(res.url)
+     })).filter(res =>
+     // TODO: will this work on windows? It might be better if `shouldInstrument` deals with it anyways
+-    res.url.startsWith(this._config.rootDir) && (0, _transform().shouldInstrument)(res.url, this._coverageOptions, this._config, /* loadedFilenames */[...this._v8CoverageSources.keys()])).map(result => {
++    (0, _transform().shouldInstrument)(res.url, this._coverageOptions, this._config, /* loadedFilenames */[...this._v8CoverageSources.keys()])).map(result => {
+       const transformedFile = this._v8CoverageSources.get(result.url);
+       return {
+         codeTransformResult: transformedFile,
